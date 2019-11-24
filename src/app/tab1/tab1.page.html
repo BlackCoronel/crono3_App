@@ -1,35 +1,19 @@
-<ion-menu side="start">
-    <ion-header>
-        <ion-toolbar color="primary">
-            <ion-title >
-                <ion-row>
-                    <ion-img src="assets/logo.png" style="width:120px;"></ion-img>
-                </ion-row>
-            </ion-title>
-        </ion-toolbar>
-    </ion-header>
-    <ion-content>
-        <ion-list>
-            <ion-item>Menu Item</ion-item>
-            <ion-item>Menu Item</ion-item>
-            <ion-item>Menu Item</ion-item>
-            <ion-item>Menu Item</ion-item>
-            <ion-item>Menu Item</ion-item>
-        </ion-list>
-    </ion-content>
-</ion-menu>
-
-<div class="ion-page" main>
-    <ion-header>
-        <ion-toolbar color="primary">
-            <ion-buttons slot="start">
-                <ion-menu-button style="color: white!important;"></ion-menu-button>
-            </ion-buttons>
-            <ion-title class="ion-no-padding">PRUEBAS PENDIENTES</ion-title>
-        </ion-toolbar>
-    </ion-header>
-    <ion-content>
-        <ion-item></ion-item>
-    </ion-content>
-</div>
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button style="color: white!important;"></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="ion-no-padding">PRÓXIMAS CARRERAS</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-item *ngFor="let prueba of pruebas" class="ion-activatable">
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-label>
+            <h2>{{ prueba.descripcion }}</h2>
+            <p>{{ prueba.fecha }}</p>
+        </ion-label>
+        <ion-icon name="flag" slot="start"></ion-icon>
+    </ion-item>
+</ion-content>
 

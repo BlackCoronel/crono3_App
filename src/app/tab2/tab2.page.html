@@ -1,9 +1,30 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Two
+     RESULTADOS
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content></ion-content>
+<ion-content [formGroup]="resultadosForm">
+  <ion-item>
+    <ion-label position="floating">Seleccionar prueba...</ion-label>
+    <ionic-selectable
+    formControlName="prueba"
+    [items]="pruebas"
+    itemValueField="id"
+    itemTextField="descripcion"
+    [canSearch]="true"
+    searchPlaceholder="Buscar..."
+    (onChange)="selectedPrueba($event)">
+    </ionic-selectable>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Nº Dorsal</ion-label>
+    <ion-input type="text" formControlName="dorsal"></ion-input>
+  </ion-item>
+</ion-content>
+<ion-footer>
+  <ion-button color="primary" expand="block" (click)="buscarResultados()">
+    COMPROBAR
+  </ion-button>
+</ion-footer>
