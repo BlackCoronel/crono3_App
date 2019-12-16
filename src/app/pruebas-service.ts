@@ -3,7 +3,7 @@ import {Observable} from 'rxjs';
 import {Pruebas} from './pruebas.model';
 import {HttpClient} from '@angular/common/http';
 import {map} from 'rxjs/operators';
-import {Resultado} from "./resultado.model";
+import {Resultado} from './tab2/resultado.model';
 
 export class PruebasService {
 
@@ -17,7 +17,7 @@ export class PruebasService {
         return this.http.get(this.pruebasUrl).pipe(map(pruebas => pruebas as Pruebas[]));
     }
 
-    public getResultadosByDorsal(data: any): Observable<Resultado> {
-        return this.http.post(this.pruebasUrl + '/resultado', data).pipe(map(resultado => resultado as Resultado));
+    public getResultadosByDorsal(data: any) {
+        return this.http.post(this.pruebasUrl + '/resultado', data).pipe(map(resultado => resultado as Resultado[]));
     }
 }

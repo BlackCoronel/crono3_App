@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://carreras.crono3.es/mobile',
+  apiUrl: 'http://crono3.test/mobile',
 };
 
 /*
