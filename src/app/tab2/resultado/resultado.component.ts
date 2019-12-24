@@ -11,14 +11,11 @@ export class ResultadoComponent {
 
     public resultado: Resultado;
 
-    constructor(private modalController: ModalController) {
-    }
+    constructor(private modalController: ModalController) {}
 
-    public ionDidViewEnter() {
+    public ionViewDidEnter() {}
 
-    }
-
-    private closeModal() {
+    public closeModal() {
         this.modalController.dismiss();
     }
 }

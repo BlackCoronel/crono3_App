@@ -1,12 +1,12 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar>
     <ion-title>
      RESULTADOS
     </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content [formGroup]="resultadosForm" class="bg-custom">
-  <ion-item>
+  <ion-item class="custom">
     <ion-label position="floating">Prueba</ion-label>
     <ionic-selectable
     formControlName="prueba"
@@ -16,15 +16,16 @@
     [canSearch]="true"
     searchPlaceholder="Buscar..."
     (onChange)="selectedPrueba($event)">
+      <ng-template ionicSelectableCloseButtonTemplate>
+        <ion-icon name="close" class="color-custom-icon"></ion-icon>
+      </ng-template>
     </ionic-selectable>
   </ion-item>
-  <ion-item>
+  <ion-item class="custom">
     <ion-label position="floating">Nº Dorsal</ion-label>
     <ion-input type="text" formControlName="dorsal"></ion-input>
   </ion-item>
-</ion-content>
-<ion-footer>
-  <ion-button color="primary" expand="block" (click)="buscarResultados()">
+  <ion-button color="dark" expand="full" (click)="buscarResultados()" class="align-button-end">
     COMPROBAR
   </ion-button>
-</ion-footer>
+</ion-content>

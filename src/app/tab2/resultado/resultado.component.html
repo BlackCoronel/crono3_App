@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button (click)="closeModal()" style="color: white!important;">
         <ion-icon name="close"></ion-icon>
@@ -11,10 +11,38 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-item>
-    <ion-label position="floating">Prueba</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Nº Dorsal</ion-label>
-  </ion-item>
+  <ion-list>
+    <ion-list-header>
+      {{resultado.prueba}}
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Dorsal</ion-label>
+      <ion-note slot="end">{{resultado.dorsal}}</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Posición</ion-label>
+     <ion-note slot="end">{{resultado.posicion}}º</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-item>
+      <ion-label>Posición catgoria:</ion-label>
+     <ion-note slot="end">{{resultado.posicion_categoria}}º</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tiempo</ion-label>
+     <ion-note slot="end">{{resultado.tiempo}}</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tiempo real</ion-label>
+     <ion-note slot="end">{{resultado.tiempo_real}}</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>km/min</ion-label>
+     <ion-note slot="end">{{resultado.tiempo_km_minuto}}</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Categoría</ion-label>
+     <ion-note slot="end">{{resultado.categoria}}</ion-note>
+    </ion-item>
+  </ion-list>
 </ion-content>

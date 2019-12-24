@@ -2,9 +2,9 @@ import {Component} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {PruebasService} from '../pruebas-service';
 import {Pruebas} from '../pruebas.model';
-import {Resultado} from "./resultado.model";
-import {ModalController, ToastController} from "@ionic/angular";
-import {ResultadoComponent} from "./resultado/resultado.component";
+import {Resultado} from './resultado.model';
+import {ModalController, ToastController} from '@ionic/angular';
+import {ResultadoComponent} from './resultado/resultado.component';
 
 @Component({
     selector: 'app-tab2',
@@ -61,7 +61,7 @@ export class Tab2Page {
     async abrirResultado(data: Resultado[]) {
         const modalRef = await this.modalController.create({
             component: ResultadoComponent,
-            componentProps: {resultado: data}
+            componentProps: {resultado: data[0]}
         });
 
         modalRef.onDidDismiss().then(result => {});

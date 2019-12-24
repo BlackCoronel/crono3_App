@@ -27,8 +27,56 @@
 
 ion-content.bg-custom {
   --background: url(/assets/img/imagen_fondo.jpg) 0 0/100% 100% no-repeat;
+  opacity: 0.95;
 }
 
 ion-item {
   --background: transparent;
 }
+
+ion-toolbar {
+--background: var(--ion-color-empresa);
+  color: white!important;
+}
+
+ion-tab-bar {
+  --background: var(--ion-color-empresa);
+}
+
+ion-tab-button {
+  color: white!important;
+}
+
+:root {
+  ion-tab-button.tab-selected {
+    ion-icon, ion-label {
+      color: #e7473c;
+      --ion-color-base: #e7473c;
+    }
+  }
+}
+
+ion-item.custom ion-label {
+  color: white!important;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+ion-input {
+  color: white!important;
+}
+
+.color-custom-icon {
+  color: white!important;
+}
+
+.align-button-end {
+  position: absolute;
+  bottom: 1%;
+  width: 99%;
+}
+
+.ionic-selectable-value{
+  color: white!important;
+}
+
