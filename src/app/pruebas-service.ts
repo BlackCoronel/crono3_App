@@ -17,6 +17,10 @@ export class PruebasService {
         return this.http.get(this.pruebasUrl).pipe(map(pruebas => pruebas as Pruebas[]));
     }
 
+    public getProximasPruebas(): Observable<Pruebas[]> {
+        return this.http.get(this.pruebasUrl + '/siguientes-pruebas').pipe(map(pruebas => pruebas as Pruebas[]));
+    }
+
     public getResultadosByDorsal(data: any) {
         return this.http.post(this.pruebasUrl + '/resultado', data).pipe(map(resultado => resultado as Resultado[]));
     }

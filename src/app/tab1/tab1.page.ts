@@ -19,7 +19,7 @@ export class Tab1Page {
     }
 
     public getPruebasDisponibles() {
-        this.pruebasService.getPruebas().subscribe(pruebas => {
+        this.pruebasService.getProximasPruebas().subscribe(pruebas => {
             this.pruebas = pruebas;
         });
     }

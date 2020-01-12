@@ -4,6 +4,9 @@
     </ion-toolbar>
 </ion-header>
 <ion-content class="bg-custom">
+    <ion-item *ngIf="pruebas.length === 0" lines="none">
+        <p class="color-custom-icon">No hay próximas pruebas.</p>
+    </ion-item>
     <ion-item *ngFor="let prueba of pruebas" class="ion-activatable custom">
         <ion-ripple-effect></ion-ripple-effect>
         <ion-label>

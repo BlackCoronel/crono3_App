@@ -30,6 +30,10 @@ ion-content.bg-custom {
   opacity: 0.95;
 }
 
+ion-list {
+  --background: transparent;
+}
+
 ion-item {
   --background: transparent;
 }

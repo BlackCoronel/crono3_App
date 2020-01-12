@@ -1,48 +1,47 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button (click)="closeModal()" style="color: white!important;">
-        <ion-icon name="close"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>
-      RESULTADO
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="closeModal()" style="color: white!important;">
+                <ion-icon name="close"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>
+            RESULTADO
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-list>
-    <ion-list-header>
-      {{resultado.prueba}}
-    </ion-list-header>
-    <ion-item>
-      <ion-label>Dorsal</ion-label>
-      <ion-note slot="end">{{resultado.dorsal}}</ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-label>Posición</ion-label>
-     <ion-note slot="end">{{resultado.posicion}}º</ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-item>
-      <ion-label>Posición catgoria:</ion-label>
-     <ion-note slot="end">{{resultado.posicion_categoria}}º</ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-label>Tiempo</ion-label>
-     <ion-note slot="end">{{resultado.tiempo}}</ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-label>Tiempo real</ion-label>
-     <ion-note slot="end">{{resultado.tiempo_real}}</ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-label>km/min</ion-label>
-     <ion-note slot="end">{{resultado.tiempo_km_minuto}}</ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-label>Categoría</ion-label>
-     <ion-note slot="end">{{resultado.categoria}}</ion-note>
-    </ion-item>
-  </ion-list>
+    <ion-list>
+        <ion-list-header>
+            {{resultado.prueba}}
+        </ion-list-header>
+        <ion-item>
+            <ion-label>Dorsal</ion-label>
+            <ion-note slot="end">{{resultado.dorsal}}</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-label>Posición</ion-label>
+            <ion-note slot="end">{{resultado.posicion}}º</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-label>Posición categoria:</ion-label>
+            <ion-note slot="end">{{resultado.posicion_categoria}}º</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-label>Tiempo</ion-label>
+            <ion-note slot="end">{{resultado.tiempo}}</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-label>Tiempo real</ion-label>
+            <ion-note slot="end">{{resultado.tiempo_real}}</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-label>km/min</ion-label>
+            <ion-note slot="end">{{resultado.tiempo_km_minuto}}</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-label>Categoría</ion-label>
+            <ion-note slot="end">{{resultado.categoria}}</ion-note>
+        </ion-item>
+    </ion-list>
 </ion-content>
