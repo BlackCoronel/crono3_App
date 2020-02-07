@@ -28,7 +28,7 @@ export class Tab1Page {
 
     async navegarPrueba(url: string) {
         if (url !== null) {
-            window.open(url, '_system');
+            window.open(url, '_self');
         } else {
             const toaster = await this.toastController.create({
                 message: 'No se ha encontrado una url para la prueba.',
