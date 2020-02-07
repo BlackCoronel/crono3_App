@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
 import {PruebasService} from '../pruebas-service';
+import {InAppBrowser} from '@ionic-native/in-app-browser/ngx';
 
 
 @NgModule({
@@ -12,11 +13,12 @@ import {PruebasService} from '../pruebas-service';
     IonicModule,
     CommonModule,
     FormsModule,
-    RouterModule.forChild([{ path: '', component: Tab1Page }])
+    RouterModule.forChild([{ path: '', component: Tab1Page }]),
   ],
   declarations: [Tab1Page],
   providers: [
-      PruebasService
+      PruebasService,
+      InAppBrowser
   ]
 })
 export class Tab1PageModule {}
