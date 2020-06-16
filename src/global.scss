@@ -29,7 +29,15 @@
 }
 
 ion-content.bg-custom {
-  --background: url(/assets/img/imagen_fondo.jpg) 0 0/100% 100% no-repeat;
+  padding-bottom: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  background-repeat: no-repeat;
+  background-image: cover !important;
+  background-size: cover !important;
+  background-position: center;
+  background-attachment: fixed;
+  --background: url(/assets/img/imagen_fondo.jpg);
   opacity: 0.95;
 }
 
