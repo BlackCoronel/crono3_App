@@ -24,6 +24,9 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+* {
+  font-family: 'Rajdhani' !important;
+}
 
 ion-content.bg-custom {
   --background: url(/assets/img/imagen_fondo.jpg) 0 0/100% 100% no-repeat;
@@ -60,18 +63,8 @@ ion-tab-button {
   }
 }
 
-ion-item.custom ion-label {
-  color: white!important;
-  font-weight: bold;
-  text-shadow: 1px 1px black;
-}
-
-ion-input {
-  color: white!important;
-}
-
 .color-custom-icon {
-  color: white!important;
+  color: black!important;
 }
 
 .align-button-end {
@@ -80,7 +73,7 @@ ion-input {
   width: 99%;
 }
 
-.ionic-selectable-value{
-  color: white!important;
+.text-black {
+  color: black;
 }
 

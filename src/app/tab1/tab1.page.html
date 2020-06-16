@@ -10,7 +10,7 @@
     <ion-item *ngFor="let prueba of pruebas" class="ion-activatable custom" (click)="accionesAlert(prueba.url, prueba.coordenadas)">
         <ion-ripple-effect></ion-ripple-effect>
         <ion-label>
-            <h2>{{ prueba.descripcion }}</h2>
+            <h2 class="text-black">{{ prueba.descripcion }}</h2>
             <p class="color-custom-icon">{{ prueba.fecha }}</p>
         </ion-label>
         <ion-icon name="flag" slot="start" class="color-custom-icon ion-no-padding ion-no-margin"></ion-icon>
